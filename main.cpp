@@ -1,6 +1,6 @@
-#include "geometry/point.h"
-#include "geometry/vector.h"
-#include "geometry/utils.h"
+#include "point.h"
+#include "vector.h"
+#include "utils.h"
 
 int main() {
     Print("\n\t ========== GÉOMÉTRIE D'UN PLAN 2D (PLANE GEOMETRY) ========== \n\n");
@@ -90,4 +90,5 @@ int main() {
 
     Print("\n");
     return 0;
+
 }
