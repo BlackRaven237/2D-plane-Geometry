@@ -1,17 +1,17 @@
-# ** 2D PLANE GEOMETRY Library **
+# **2D PLANE GEOMETRY Library**
 
-## ** Project Description **
+## **Project Description**
 This is a User-Defined Library, designed to implement mathematical concepts of plane geometry and other properties using our knowledge of **struct** and **modular programming** in C++.
 
-## ** Structure and Functions **
+## **Structure and Functions**
 
-### ** Basic Data Structures **
+### **Basic Data Structures**
 ``` cpp
 struct Point2f { float x, y; }; // Used to represent a 2D point
 struct Vector2f { float x, y; }; // Represents a 2D vector 
 ```
 
-### ** Functions for 2D Points Manipulation **
+### **Functions for 2D Points Manipulation**
 ``` cpp
 Point2f MakeP2f(float x, float y);// Creating a point from it's coordinates
 Point2f MakeNullPoint();// Creating a null point (origin)
@@ -22,7 +22,7 @@ Point2f Scale(const Point2f& p, const Vector2f& s);// Scaling using a vector
 Point2f Rotate(const Point2f& p, float angleDegree);// Rotating through an angle
 ```
 
-### ** Functions for 2D Vectors Manipulation **
+### **Functions for 2D Vectors Manipulation**
 ```cpp
 Vector2f MakeV2f(float x, float y);// Creating a vector given coordinates
 Vector2f MakeV2f(const Point2f& a, const Point2f& b);// Creating a vector using 2 points
@@ -36,11 +36,11 @@ Vector2f Normalize(const Vector2f& v);// Vector Normalization(unit vector)
 Vector2f Lerp(const Vector2f& a, const Vector2f& b, float t);// Linear Interpolation
 float Determinant(const Vector2f& a, const Vector2f& b);// Determinant of 2 vectors
 ```
-## ** Project Files **
+## **Project Files**
 
-### ** Header Files **
+### **Header Files**
 
-#### ** geometry/point.h **
+#### **geometry/point.h**
 This Header File contains all the functions listed above for 2D points manipulation.
 ``` cpp
 #ifndef POINT_H
@@ -72,7 +72,7 @@ std::string ToString(const Point2f& p);
 
 #endif
 ```
-#### ** geometry/vector.h **
+#### **geometry/vector.h**
 This Header File contains all the functions listed above for 2D vectors manipulation.
 ```cpp
 #ifndef VECTOR_H
@@ -111,7 +111,7 @@ std::string ToString(const Vector2f& v);
 #endif
 ```
 
-#### ** geometry/utils.h **
+#### **geometry/utils.h**
 This Header File contains functions needed to convert our user-defined structures **Point2f** and **Vector2f** in to strings; **ToString()** and output them; **Print()**
 ```cpp
 #ifndef UTILS_H
@@ -166,9 +166,9 @@ void Print(const T& first, const Args&... args) {
 #endif
 ```
 
-### ** CPP Files **
+### **CPP Files**
 
-#### ** geometry/point.cpp **
+#### **geometry/point.cpp**
 This .cpp file has the definitions or implementations of all the functions declared in **point.h**
 ```cpp
 #include "point.h"
@@ -236,7 +236,7 @@ std::string ToString(const Point2f& p)
 }
 ```
 
-#### ** geometry/vector.cpp **
+#### **geometry/vector.cpp**
 This .cpp file has the definitions or implementations of all the functions declared in **vector.h**
 ```cpp
 #include "vector.h"
@@ -333,7 +333,7 @@ std::string ToString(const Vector2f& v)
 }
 ```
 
-#### ** main.cpp **
+#### **main.cpp**
 This is our main file where all the functions above are been called and tested.
 ``` cpp
 #include "geometry/point.h"
@@ -430,7 +430,7 @@ int main() {
     return 0;
 }
 ```
-## ** Compilation and Execution **
+## **Compilation and Execution**
 * In order to effectively run this code, I will advice to you all to compile my code using **Standard C++17 and CLANG++** by following this syntax
 ```bash
 # This command help you compile the entire project at once
@@ -440,5 +440,6 @@ clang++ -std=c++17 main.cpp geometry/*.cpp -I geometry -o geometry
 ``` bash
 ./geometry
 ```
-## ** Conclusion **
+## **Conclusion**
+
 I give special thanks to myself, friends and most-especially my teacher to whom this project couldn't have been possible 😁😁😁✌️✌️✌️.
